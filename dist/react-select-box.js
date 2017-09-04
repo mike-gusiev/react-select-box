@@ -165,7 +165,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      } else {
 	        this.updatePendingValue(val, cb) || this.props.onChange(val)
 	        this.handleClose()
-	        this.refs.button.getDOMNode().focus()
+	        this.refs.button.focus()
 	      }
 	    }.bind(this)
 	  },
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  handleOpen: function (event) {
 	    interceptEvent(event)
 	    this.setState({open: true}, function () {
-	      this.refs.menu.getDOMNode().focus()
+	      this.refs.menu.focus()
 	    })
 	  },
 	
